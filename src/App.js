@@ -10,12 +10,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/d:amazing' element={<MainPage/>} />
+        <Route path='/' element={<MainPage/>} />
+        {/* <Route path='/d:amazing' element={<MainPage/>} /> */}
         <Route path='/login' element={<Login/>} />
         <Route path='/register' element={<Register/>} />
       </Routes>
-    </BrowserRouter>
-    
+    </BrowserRouter>  
   );
 }
 

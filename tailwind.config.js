@@ -6,7 +6,8 @@ module.exports = {
     screens: {
       'mobile': { 'max': '768px' },
       'tablet': { 'min': '769px', 'max': '1023px' },
-      'desktop': { 'min': '1024px' }
+      'desktop': { 'min': '1024px' },
+      'xl': '1280px'
     }
   },
   plugins: [],
