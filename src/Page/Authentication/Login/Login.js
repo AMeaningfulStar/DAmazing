@@ -35,11 +35,11 @@ const Login = () => {
         </from>
       </div>
       <div className='text-sm text-gray-500'>
-        <Link> 비밀번호 찾기 </Link>
+        <Link className='hover:font-semibold'> 비밀번호 찾기 </Link>
         |
-        <Link> 아이디 찾기 </Link>
+        <Link className='hover:font-semibold'> 아이디 찾기 </Link>
         |
-        <Link> 회원 가입 </Link>
+        <Link to='/register' className='hover:font-semibold'> 회원 가입 </Link>
       </div>
     </div>
   )
