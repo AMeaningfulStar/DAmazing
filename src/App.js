@@ -11,6 +11,7 @@ import { clearUser, setUser } from './Redux/actions/user_action';
 import MainPage from './Page/MainPage/MainPage';
 import Login from './Page/Authentication/Login/Login';
 import Register from './Page/Authentication/Register/Register';
+import MyPage from './Page/MyPage/MyPage';
 
 function App(props) {
   const navigate = useNavigate(); // 강제 경로 이동
@@ -43,6 +44,7 @@ function App(props) {
         <Route path='/' element={<Login />} />
         <Route path='/d:amazing' element={<MainPage />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/myPage' element={<MyPage />} />
       </Routes>
     );
   }
