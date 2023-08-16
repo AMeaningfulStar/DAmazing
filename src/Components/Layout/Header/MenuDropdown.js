@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 import { BiChevronDown } from 'react-icons/bi';
 
-const Dropdown = props => {
+const MenuDropdown = props => {
   const [dropdownShow, setDropdownShow] = useState(false);
 
-  const DropdownMenu = props => {
+  const Dropdown = props => {
     const [showAnimation, setShowAnimation] = useState(false);
     const [repeat, setReapeat] = useState(null);
 
@@ -47,11 +47,11 @@ const Dropdown = props => {
         </button>
       </div>
       {dropdownShow && <div className='fixed inset-0 z-30 w-full h-full' onClick={e => setDropdownShow(!dropdownShow)}></div>}
-      <DropdownMenu>
+      <Dropdown>
         {props.children}
-      </DropdownMenu>
+      </Dropdown>
     </div>
   )
 }
 
-export default Dropdown
+export default MenuDropdown

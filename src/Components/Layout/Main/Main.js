@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Main = () => {
+const Main = ({ children }) => {
   return (
     <main className='flex-1 desktop:mt-20'>
-    
+      {children }
     </main>
   )
 }
